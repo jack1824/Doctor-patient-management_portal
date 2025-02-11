@@ -3,12 +3,12 @@ import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import './index.css'
 import { BrowserRouter } from 'react-router-dom'
-import WasdProvider from './context/Wasd.jsx'
+import AppContextProvider  from './context/Appcontext.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
-    <WasdProvider>
+    <AppContextProvider>
       <App />
-    </WasdProvider>
+    </AppContextProvider>
   </BrowserRouter>
 )

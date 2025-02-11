@@ -1,18 +1,18 @@
 import { createContext } from "react";
 import { doctors } from '../assets/assets'
 
-export const WasdProvider = createContext()
+export const AppContext = createContext()
 
-const WasdProvider = (props) => {
+const AppContextProvider = (props) => {
     const value = {
         doctors
     }
 
     return (
-        <Wasd.Provider value={value}>
+        <AppContext.Provider value={value}>
             {props.children}  {/*  access children */}
-        </Wasd.Provider>
+        </AppContext.Provider>
     )
 }
 
-export default WasdProvider
+export default AppContextProvider

@@ -4,8 +4,8 @@
 @tailwind utilities;
 
 /* Set font-family globally */
-html, body {
-    font-family: 'Outfit', sans-serif;
+*{
+    font-family:Outfit;
 }
 
 /* Active class for hr */
@@ -15,5 +15,5 @@ html, body {
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {
-    display: none; /* Replaces @apply hidden */
+    @display: none; /* Replaces @apply hidden */
 }
